@@ -7,58 +7,64 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6-col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">NAME</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="name" [(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6-col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                    <label for="" class="form-label">BLLOD GROUP</label>
-                    <input type="text" class="form-control">
+                    <label for="" class="form-label">BLOOD GROUP</label>
 
-                </div>
+                    <select id="" class="form-control" name="bloodGroup" [(ngModel)]="bloodGroup">
+                            <option value="A+ve">A+ve</option>
+                            <option value="B+ve">B+ve</option>
+                            <option value="O+ve">O+ve</option>
+                    </select>
+                
+            
+            </div>
                 <div class="col col-12 col-sm-6-col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">DOB</label>
-                    <input type="text" class="form-control">
+                    <input type="date" class="form-control" name="dob" [(ngModel)]="dob">
 
                 </div>
                 <div class="col col-12 col-sm-6-col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">LAST DONATION DATE</label>
-                    <input type="date" class="form-control">
+                    <input type="date" class="form-control" name="lastDonation" [(ngModel)]="lastDonation">
 
                 </div>
                 <div class="col col-12 col-sm-6-col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">PREVIOUS DISEASE</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="disease" [(ngModel)]="disease">
 
                 </div>
                 <div class="col col-12 col-sm-6-col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">LAST VACCINATION DATE</label>
-                    <input type="date" class="form-control">
+                    <input type="date" class="form-control" name="vaccination" [(ngModel)]="vaccination">
 
                 </div>
                 <div class="col col-12 col-sm-6-col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">PINCODE</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="pincode" [(ngModel)]="pincode">
 
                 </div>
                 <div class="col col-12 col-sm-6-col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">MOBILE</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="mobile" [(ngModel)]="mobile">
 
                 </div>
                 <div class="col col-12 col-sm-6-col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">EMAIL</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="email" [(ngModel)]="email">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">SUBMIT</button>
+                    <button class="btn btn-success" (click)="readValues()">SUBMIT</button>
                 </div>
             </div>
 

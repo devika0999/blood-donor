@@ -6,11 +6,11 @@
             <div class="row">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">DONOR ID</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="id" [(ngModel)]="id">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">delete</button>
+                    <button class="btn btn-success" (click)="deleteValues()">delete</button>
                 </div>
             </div>
         </div>

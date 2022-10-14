@@ -9,6 +9,19 @@ export class SearchComponent implements OnInit {
 
   constructor() { }
 
+ 
+  bloodGroup=""
+  
+  searchValues=()=>{
+    let data ={
+      
+      "bloodGroup":this.bloodGroup
+    }
+    
+    console.log(data)
+  }
+
+
   ngOnInit(): void {
   }
 

@@ -9,6 +9,15 @@ export class DeleteComponent implements OnInit {
 
   constructor() { }
 
+  id=""
+
+  deleteValues=()=>{
+    let data={
+      "id":this.id
+    }
+    console.log(data)
+  }
+
   ngOnInit(): void {
   }
 
